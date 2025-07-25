@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iAPPSSTUDIO - Custom App & Web Development</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles & Font Configuration -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* A light gray background */
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #4f46e5, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bg-gradient-header {
+            background: radial-gradient(circle at top, rgba(79, 70, 229, 0.1), transparent 40%);
+        }
+        .card-hover-effect {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover-effect:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header -->
+    <header id="home" class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-lg shadow-sm">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="#home" class="text-2xl font-bold text-gray-900">
+                    iAPPS<span class="text-indigo-600">STUDIO</span>
+                </a>
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#services" class="text-gray-600 hover:text-indigo-600 transition duration-300">Services</a>
+                    <a href="#about" class="text-gray-600 hover:text-indigo-600 transition duration-300">About Us</a>
+                    <a href="#contact" class="bg-indigo-600 text-white px-4 py-2 rounded-lg shadow-md hover:bg-indigo-700 transition duration-300">Contact Us</a>
+                </nav>
+                <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#services" class="block px-6 py-3 text-gray-600 hover:bg-gray-100">Services</a>
+            <a href="#about" class="block px-6 py-3 text-gray-600 hover:bg-gray-100">About Us</a>
+            <a href="#contact" class="block px-6 py-3 text-gray-600 hover:bg-gray-100">Contact Us</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="pt-24 bg-gradient-header">
+        <section class="container mx-auto px-6 py-20 md:py-32 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight text-gray-900 mb-4">
+                Building Digital Experiences That <span class="text-gradient">Inspire</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+                We are iAPPSSTUDIO, your trusted partner for creating high-performance, user-centric applications for <span class="font-semibold">Android, iOS, and the Web.</span>
+            </p>
+            <a href="#contact" class="bg-indigo-600 text-white px-8 py-4 rounded-lg shadow-lg text-lg font-semibold hover:bg-indigo-700 transition duration-300 transform hover:scale-105">
+                Get a Free Quote
+            </a>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Our Core Services</h2>
+                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">From concept to launch, we provide end-to-end development services to bring your ideas to life.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <!-- Service Card: Android -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-md card-hover-effect text-center">
+                        <div class="bg-green-100 text-green-600 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 12v-2a1 1 0 0 0-1-1h-1.58A5.96 5.96 0 0 0 17 7a6 6 0 0 0-12 0c0 .98.24 1.91.66 2.74L5 11v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM7.5 8a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm9 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM18 14H6a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Android Development</h3>
+                        <p class="text-gray-600">We build native Android apps that are fast, reliable, and tailored to your business needs, ensuring a seamless experience on any device.</p>
+                    </div>
+                    <!-- Service Card: iOS -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-md card-hover-effect text-center">
+                        <div class="bg-gray-200 text-gray-800 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M15.5 1h-7A2.5 2.5 0 0 0 6 3.5v17A2.5 2.5 0 0 0 8.5 23h7a2.5 2.5 0 0 0 2.5-2.5v-17A2.5 2.5 0 0 0 15.5 1zm-3.5 21a1 1 0 1 1 0-2 1 1 0 0 1 0 2zM16 18H8V4h8v14z"/>
+                           </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">iOS Development</h3>
+                        <p class="text-gray-600">Elegant and powerful iOS applications for iPhone and iPad, designed to meet Apple's high standards and captivate your users.</p>
+                    </div>
+                    <!-- Service Card: Web -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-md card-hover-effect text-center">
+                        <div class="bg-blue-100 text-blue-600 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M13 16.27L18.24 12 13 7.73V10h-2V7.73L5.76 12 11 16.27V14h2v2.27zM20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V6h16v12z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Web Development</h3>
+                        <p class="text-gray-600">Responsive, scalable, and secure web applications and websites built with modern technologies to grow your online presence.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2">
+                        <img src="https://placehold.co/600x400/e0e7ff/4f46e5?text=Our+Team" alt="A team of developers collaborating" class="rounded-xl shadow-lg w-full" onerror="this.onerror=null;this.src='https://placehold.co/600x400';">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Who We Are</h2>
+                        <p class="text-gray-600 mb-4">
+                            iAPPSSTUDIO is a passionate team of developers, designers, and strategists dedicated to crafting exceptional digital products. We believe in the power of technology to solve problems, connect people, and drive business growth.
+                        </p>
+                        <p class="text-gray-600">
+                            Our process is collaborative and transparent. We work closely with you at every stage, from initial idea to final deployment, ensuring the end product not only meets but exceeds your expectations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Let's Build Something Amazing</h2>
+                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Have a project in mind? We'd love to hear about it. Fill out the form below or email us.</p>
+                </div>
+                <div class="max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-lg">
+                    <form action="#" method="POST">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                                <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Your Email</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500" required>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+                            <input type="text" id="subject" name="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500" required>
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="bg-indigo-600 text-white px-8 py-3 rounded-lg shadow-md text-lg font-semibold hover:bg-indigo-700 transition duration-300">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p>&copy; 2025 iAPPSSTUDIO. All Rights Reserved.</p>
+            <p class="text-gray-400 mt-2">Designed to bring your ideas to life.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+        for (let link of mobileMenuLinks) {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        }
+    </script>
+
+</body>
+</html>
